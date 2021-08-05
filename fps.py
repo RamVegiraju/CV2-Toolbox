@@ -1,5 +1,5 @@
 import cv2
-vidcap = cv2.VideoCapture('prettywomen.mp4')
+vidcap = cv2.VideoCapture('filename.mp4')
 def getFrame(sec):
     vidcap.set(cv2.CAP_PROP_POS_MSEC,sec*1000)
     hasFrames,image = vidcap.read()
